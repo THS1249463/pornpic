@@ -5,6 +5,18 @@
     <title>Hello</title>
 </head>
 <body>
-    <h1>Hello!</h1>
+    <h1>防雷圖片解鎖區</h1>
+    <input type="text" id="name" placeholder="請輸入密碼取得圖片:">
+    <button onclick="iscorrect()">enter</button>
 </body>
+<script>
+    function iscorrect(){
+        var name = document.getElementById("name").value;
+        if(name === "1234"){
+            window.location.href = "pic.html";
+        } else {
+            alert("密碼錯誤，請再試一次！");
+        }
+    }
+</script>
 </html>
