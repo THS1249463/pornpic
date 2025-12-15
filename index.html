@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <title>防雷圖片解鎖</title>
 </head>
 <body>
     <h1>防雷圖片解鎖區</h1>
-    <input type="text" id="name" placeholder="請輸入密碼取得圖片:">
+    <input type="password" id="pw" placeholder="請輸入密碼取得圖片:"onkeydown="if(event.key==='Enter') iscorrect()">
     <button onclick="iscorrect()">enter</button>
 </body>
 <script>
     function iscorrect(){
-        var name = document.getElementById("name").value;
-        if(name === "1234"){
+        var name = document.getElementById("pw").value;
+        if(name === "kasli"){
             window.location.href = "pic.html";
         } else {
-            alert("密碼錯誤，請再試一次！");
+            alert("密碼錯誤！");
         }
     }
 </script>
